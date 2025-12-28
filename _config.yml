@@ -1,5 +1,3 @@
 title: JanKoWeb
 description: Janko's webpage
 theme: just-the-docs
-plugins:
-  - jekyll-remote-theme
