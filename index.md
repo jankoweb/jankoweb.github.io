@@ -1,3 +1,6 @@
+---
+nav: true
+---
 # Ahoj 👋
 
 Toto je moje GitHub Pages stránka.
