@@ -1,7 +1,6 @@
 ---
 title: Personal
 nav: true
-permalink: /games/
 ---
 
 
