@@ -1,5 +1,5 @@
 title: JanKoWeb
 description: Janko's webpage
-remote_theme: pages-themes/minimal@v0.2.0
+theme: just-the-docs
 plugins:
   - jekyll-remote-theme
