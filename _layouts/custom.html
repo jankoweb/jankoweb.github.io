@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title }}{% if site.title %} • {{ site.title }}{% endif %}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title | default: "Janko" }}</a>
+      <button class="nav-toggle" aria-label="Otevřít menu">☰</button>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">Domů</a>
+        <a href="{{ '/personal/' | relative_url }}">O mně</a>
+        <a href="https://dev.to/{{ site.devto_username | default: 'jankoweb' }}" target="_blank" rel="noopener">dev.to</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="https://github.com/jankoweb/jankoweb.github.io.git" target="_blank" rel="noopener">Repozitář na GitHub</a>
+      </div>
+      <div>© Janko 2026</div>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle mobile nav
+    document.addEventListener('click', function (e) {
+      if (!e.target.matches('.nav-toggle')) return;
+      document.querySelector('.site-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<section class="devto-feed">
+  <h2>Moje články z dev.to</h2>
+  <div class="devto-list" data-username="{{ include.username | default: site.devto_username | default: 'jankoweb' }}" data-count="{{ include.count | default: 6 }}">
+    <p>Načítám…</p>
+  </div>
+  <noscript>
+    <p>Aktivujte JavaScript pro zobrazení seznamu článků.</p>
+  </noscript>
+  <script src="{{ '/assets/js/devto-feed.js' | relative_url }}"></script>
+</section>
